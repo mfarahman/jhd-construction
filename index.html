@@ -25,50 +25,28 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--black-deep);
-      color: var(--white);
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 300;
-      cursor: none;
-      overflow-x: hidden;
-    }
+  background: var(--black-deep);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  cursor: default;
+  overflow-x: hidden;
+}
 
-    /* Custom cursor */
-    .cursor {
-      width: 8px; height: 8px;
-      background: var(--gold);
-      border-radius: 50%;
-      position: fixed;
-      top: 0; left: 0;
-      pointer-events: none;
-      z-index: 9999;
-      transition: transform 0.15s ease;
-    }
-    .cursor-ring {
-      width: 36px; height: 36px;
-      border: 1px solid rgba(201,168,76,0.5);
-      border-radius: 50%;
-      position: fixed;
-      top: 0; left: 0;
-      pointer-events: none;
-      z-index: 9998;
-      transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
+/* Scrollbar */
+::-webkit-scrollbar { width: 3px; }
+::-webkit-scrollbar-track { background: var(--black); }
+::-webkit-scrollbar-thumb { background: var(--gold); }
 
-    /* Scrollbar */
-    ::-webkit-scrollbar { width: 3px; }
-    ::-webkit-scrollbar-track { background: var(--black); }
-    ::-webkit-scrollbar-thumb { background: var(--gold); }
-
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0;
-      z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 28px 60px;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, transparent 100%);
-      transition: padding 0.4s ease, background 0.4s ease;
-    }
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 28px 60px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.95) 0%, transparent 100%);
+  transition: padding 0.4s ease, background 0.4s ease;
+}
     nav.scrolled {
       padding: 18px 60px;
       background: rgba(0,0,0,0.97);
