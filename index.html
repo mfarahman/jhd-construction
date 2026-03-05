@@ -850,11 +850,37 @@ nav {
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-logo">JHD <span>Constructions</span></div>
-  <div class="footer-tagline">Building Excellence, One Structure at a Time</div>
-  <div class="footer-copy">© 2025 JHD Constructions. Aluthgama, Sri Lanka. &nbsp;|&nbsp; Website Designed & Developed by Gomintro</div>
-</footer>
+footer {
+  background: var(--black);
+  border-top: 1px solid var(--black-border);
+  padding: 48px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; font-weight: 600;
+  letter-spacing: 3px; color: var(--white);
+}
+.footer-logo span { color: var(--gold); }
+.footer-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 14px; font-style: italic;
+  color: var(--gold); opacity: 0.6;
+}
+.footer-copy {
+  font-size: 10px; letter-spacing: 1.5px;
+  color: rgba(245,240,232,0.3);
+  text-align: center;
+}
 
 <script>
   // Custom Cursor
